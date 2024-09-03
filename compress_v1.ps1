@@ -2,7 +2,7 @@
 
 $YourDirToCompress="c:\temp"
 $ZipFileResult="C:\temp10\result.zip"
-$DirToExclude=@("test", "test1", "test2")
+$DirToExclude=@("bin", "obj", ".git", ".vs")
 
 Get-ChildItem $YourDirToCompress -Directory  | 
            where { $_.Name -notin $DirToExclude} | 
