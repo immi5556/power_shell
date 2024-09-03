@@ -1,7 +1,7 @@
 # https://stackoverflow.com/questions/41081488/how-do-i-exclude-a-folder-in-compress-archive
 
-$YourDirToCompress="c:\temp"
-$ZipFileResult="C:\temp10\result.zip"
+$YourDirToCompress="C:\Users\10011070\source\repos"
+$ZipFileResult="C:\Users\10011070\source\result.zip"
 $DirToExclude=@("bin", "obj", ".git", ".vs")
 
 Get-ChildItem $YourDirToCompress -Directory  | 
